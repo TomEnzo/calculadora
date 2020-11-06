@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>   
+    <title>Calculadora Completa</title>
+    
+    <style type="text/css">
+
+        #idForma {
+
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        #idNumber {            
+            border-radius: revert;
+            width: 37%;
+            margin-left: 31.5%;
+            font-family: Segoe U;
+            font-size: 40px;
+        }   
+
+        input {
+            width: 60px;
+            height: 60px;
+        }
+        div#idDiv {
+            text-align: center;
+            font-family: Segoe UI Black;
+            
+        }
+        header {
+            text-align: center;
+            margin-top: 120px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Calculadora
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                
+                <fieldset id="idForma">
+                    
+                    <input type="text" id="idNumber" name="nmNumber" step="0.1">
+                    <br>
+                    <div id="idDiv">
+                        
+                        <input type="submit" value="%" onclick="porcentagem()">
+                        <input type="submit" value="x²" onclick="potenciacao()">
+                        <input type="submit" value="√" onclick="raizQuadrada()">
+                        <input type="submit" value="÷" onclick="dividir()">
+
+                        <br>
+                        <input type="submit" value="7" onclick="button7()">
+                        <input type="submit" value="8" onclick="button8()">
+                        <input type="submit" value="9" onclick="button9()">
+                        <input type="submit" value="X" onclick="multiplicar()">                    
+                        
+                        <br>
+                        <input type="submit" value="4" onclick="button4()">
+                        <input type="submit" value="5" onclick="button5()">
+                        <input type="submit" value="6" onclick="button6()">
+                        <input type="submit" value="-" onclick="subtrair()">                    
+                        
+                        <br>
+                        <input type="submit" value="1" onclick="button1()">
+                        <input type="submit" value="2" onclick="button2()">
+                        <input type="submit" value="3" onclick="button3()">
+                        <input type="submit" value="+" onclick="somar()">                    
+                                            
+                        <br>
+                        <input type="reset" value="C" onclick="limpar()">
+                        <input type="submit" value="0" onclick="button0()">
+                        <input type="submit" value="." onclick="ponto()">                                        
+                        <input type="submit" value="=" onclick="resultado1()">                    
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <script src="calculadora.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
